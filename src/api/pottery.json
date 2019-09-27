@@ -1,0 +1,54 @@
+{
+    "pottery": [
+        {
+            "id": 0,
+            "name": "yorba",
+            "shape": "circle",
+            "weight": "4",
+            "height": "5",
+            "fired": "yes",
+            "cracked": "",
+            "price": "40"
+        },
+    {
+        "id": 1,
+        "name": "melvin",
+        "shape": "cube",
+        "weight": "11",
+        "height": "55",
+        "fired": "yes",
+        "cracked": "",
+        "price": "40"
+     },
+    {
+        "id": 2,
+        "name": "fred",
+        "shape": "oval",
+        "weight": "2",
+        "height": "55",
+        "fired": "true",
+        "cracked": "",
+        "price": "20"
+    },
+    {
+        "id": 3,
+        "name": "chuck",
+        "shape": "ring",
+        "weight": "21",
+        "height": "55",
+        "fired": "true",
+        "cracked": "",
+        "price": "40"
+    },
+    {
+        "id": 4,
+        "name": "herman",
+        "shape": "triangle",
+        "weight": "1",
+        "height": "55",
+        "fired": "true",
+        "cracked": "",
+        "price": "20"
+    }
+]   
+}

@@ -108,3 +108,32 @@ potteryToSell.forEach(element => {
     
 });
 console.log(`Pottery to Sell`, potteryToSell)
+
+// The Hairy Potter - Part III
+// In this exercise, you are going to use json-server to expose an API containing JSON representations of pottery items, and then write JavaScript to get data from the API.
+
+// Create an api sub-directory in your project directory.
+// In that directory, create a pottery.json file.
+// In that file, create a pottery resource array and create 5 pottery JSON representations in that array. Each one should have all of the properties listed in Part 1 of this exercise.
+// Start json-server.
+// Instead of building your array from the 3 functions you defined in Part 1, use fetch to get the data from your API.
+// Once you have the data, use it for Part 2 of this exercise.
+
+fetch("http://localhost:3000/pottery")
+    .then(pottery => pottery.json())
+    .then(pottery => {
+        console.table(pottery)
+        pottery.forEach(pottery => {
+            const createHTML = (pottery) =>
+                                      `
+                                    <div class="pottery">
+ 
+                                    <p>I sold a  ${pottery.shape} for ${pottery.price}</p>
+                                    </div>
+                                        ` 
+                                        const inventoryContainer = document.querySelector("#inventory")
+                                        inventoryContainer.innerHTML += createHTML(pottery); 
+    })
+
+            
+        });
